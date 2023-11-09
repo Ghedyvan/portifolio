@@ -1,5 +1,8 @@
 import CardDiff from "./CardDiff";
 import NextJs from "@/assets/next-js.svg";
+import StudentCap from "@/assets/student.svg";
+import Notion from "@/assets/notion.svg";
+import Rocket from "@/assets/rocket.svg";
 import Icon4 from "@/assets/Icons/essential/codeblack.svg";
 
 export default function Cards() {
@@ -21,10 +24,10 @@ export default function Cards() {
       </div>
       <div className="grid grid-cols-3 gap-y-5">
         <CardDiff image={ NextJs } word="Tecnologias" text="Busco sempre aprender as tecnologias mais usadas pelos profissionais para estar sempre atualizado"/>
-        <CardDiff image={ NextJs } word="Formação" text="Atualmente cursando Ciência da Computação da Universidade Federal de Alagoas - UFAL"/>
+        <CardDiff image={ StudentCap } word="Formação" text="Atualmente cursando Ciência da Computação da Universidade Federal de Alagoas - UFAL"/>
         <CardDiff image={ Icon4 } word="Boas práticas" text="Sempre trabalhando para manter o código limpo e organizado, assim facilitando sua leitura e compreensão"/>
-        <CardDiff image={ Icon4 } word="Tecnologias" text="Busco sempre aprender as tecnologias mais usadas pelos profissionais para estar sempre atualizado"/>
-        <CardDiff image={ NextJs } word="Formação" text="Atualmente cursando Ciência da Computação da Universidade Federal de Alagoas - UFAL"/>
+        <CardDiff image={ Notion } word="Organização" text="Através do Notion você saberá detalhadamente o estado de cada etapa do seu sistema"/>
+        <CardDiff image={ Rocket } word="Formação" text="Atualmente cursando Ciência da Computação da Universidade Federal de Alagoas - UFAL"/>
         <CardDiff image={ NextJs } word="Boas práticas" text="Sempre trabalhando para manter o código organizado, assim facilitando sua leitura e compreensão"/>
       </div>
     </div>

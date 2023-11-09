@@ -11,7 +11,7 @@ export default function Header() {
       <div className="h-full mx-h-[100px] flex justify-between w-full py-6">
         <Image src={ LogoGhedyvan } alt="Logo" className="max-w-[70px]"/>
         <div className="flex ">
-          <ul className="flex gap-12 items-center mr-24">
+          <ul className="flex gap-12 items-center mr-24 text-white">
             <li>
               <Link href={"./"}>Quem sou</Link>
             </li>
@@ -23,11 +23,11 @@ export default function Header() {
             </li>
           </ul>
           <div className="flex items-center">
-            <Link href={"./"} className="flex items-center">
+            <Link href={"./"} className="flex items-center text-white">
               <Image src={Brazil} alt="Brazil logo" className="mr-2"/>
               <span>PT  /</span>
             </Link>
-            <Link href={"./"} className="flex items-center ml-2">
+            <Link href={"./"} className="flex items-center ml-2 text-white">
               <Image src={USA} alt="USA logo" className="mr-2"/>
               <span>EN</span>
             </Link>

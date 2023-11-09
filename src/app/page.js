@@ -21,10 +21,11 @@ export default function Home() {
           <Cards />
         </div>
       </div>
-      <div className="w-full max-w-[1246px] px-[15px] mx-auto flex items-center">
-        <Rodape />
+      <div className="w-full bg-black">
+        <div className="w-full max-w-[1246px]  px-[15px] mx-auto flex items-center">
+          <Rodape />
+        </div>
       </div>
-     
     </div>
   );
 }

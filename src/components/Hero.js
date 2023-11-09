@@ -39,7 +39,7 @@ export default function Home() {
             Next.js. Essa experiência prática vem me permitindo desenvolver
             habilidades que ajudam a criar soluções eficientes e eficazes.
           </p>
-          <Link className="flex" href={"./contato"}>
+          <Link className="flex text-white" href={"./contato"}>
             Comece um projeto{" "}
             <Image src={ArrowRight} alt="Seta direita" className="ml-4" />
           </Link>
