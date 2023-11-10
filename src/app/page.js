@@ -14,7 +14,7 @@ export default function Home() {
   useEffect(() => {
     gsap.fromTo(
       ".mainContent",
-      { opacity: 0.0 },
+      { opacity: 0 },
       { opacity: 1, duration: 2.5, delay: 4.5 }
     );
   }, []);
@@ -25,21 +25,21 @@ export default function Home() {
         <ScreenLoading />
       </div>
       <div className="bg-gradiente-header">
-        <div className="w-full mainContent max-w-[1246px] px-[15px] mx-auto flex items-center">
+        <div className="w-full mainContent max-w-[1246px] px-[15px] mx-auto flex items-center opacity-0">
           <Header />
         </div>
-        <div className="mainContent">
+        <div className="mainContent opacity-0">
           <Hero />
           <Badge />
         </div>
       </div>
       <div className="bg-white">
-        <div className="w-full mainContent max-w-[1246px] px-[15px] mx-auto flex items-center">
+        <div className="w-full mainContent max-w-[1246px] px-[15px] mx-auto flex items-center opacity-0">
           <Cards />
         </div>
       </div>
       <div className="w-full bg-black">
-        <div className="w-full mainContent max-w-[1246px]  px-[15px] mx-auto flex items-center">
+        <div className="w-full mainContent max-w-[1246px]  px-[15px] mx-auto flex items-center opacity-0">
           <Rodape />
         </div>
       </div>

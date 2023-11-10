@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import ArrowRight from "@/assets/arrowRight.svg";
 import Image from "next/image";
@@ -7,6 +7,7 @@ import WillFoto from "@/assets/willFoto.png";
 import WillFoto2 from "@/assets/willFoto2.png";
 import WillFoto3 from "@/assets/willFoto3.png";
 import Ghedyvan from "@/assets/ghedyvan.jpg";
+import gsap from "gsap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -21,10 +22,24 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 export default function Home() {
+  const leftRef = useRef("");
+  const rightRef = useRef("");
+
+  useEffect(() => {
+    const tl = gsap.timeline({ defaults: { duration: 1.5 } });
+    const leftSide = leftRef.current;
+    const rightSide = rightRef.current;
+    tl.fromTo(leftSide, { opacity: 0, x: -100 }, { opacity: 1, x: 0,  delay: 4 }).fromTo(
+      rightSide,
+      { opacity: 0, x: 100 },
+      { opacity: 1, x: 0 }
+    );
+  }, []);
+
   return (
     <div className="bg-gradiente-hero h-[897px] w-full">
       <div className="w-full max-w-[1246px] px-[15px] mx-auto flex justify-between">
-        <div className="w-full max-w-[645px] mt-[204px] bg-red">
+        <div ref={leftRef} className="w-full max-w-[645px] mt-[204px] bg-red">
           <p className="text-[14px] text-neutral-400 font-normal leading-tight mb-6">
             Hi, I am{" "}
             <span className="text-base font-semibold text-white">
@@ -45,7 +60,10 @@ export default function Home() {
             <Image src={ArrowRight} alt="Seta direita" className="ml-4" />
           </Link>
         </div>
-        <div className="mt-[112px] max-w-[520px] overflow-hidden">
+        <div
+          ref={rightRef}
+          className=" mt-[112px] max-w-[520px] overflow-hidden"
+        >
           <Swiper
             centeredSlides={true}
             autoplay={{
@@ -63,7 +81,7 @@ export default function Home() {
           >
             <SwiperSlide className="mySwiper max-w-[520px]">
               {/* <Image src={WillFoto} className="cover" alt="Foto Will Moreira" /> */}
-              <Image src={ Ghedyvan } className="cover" alt="Foto Will Moreira" />
+              <Image src={Ghedyvan} className="cover" alt="Foto Will Moreira" />
             </SwiperSlide>
             {/* <SwiperSlide className="mySwiper max-w-[520px]">
               <Image
