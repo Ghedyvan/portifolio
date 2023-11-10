@@ -6,7 +6,7 @@ import StudentCap from "@/assets/student.svg";
 import Notion from "@/assets/notion.svg";
 import Rocket from "@/assets/rocket.svg";
 import CSS from "@/assets/css.svg";
-import Warning from "@/assets/warningapple.png";
+import Warning from "../assets/warningapple.png";
 import Icon4 from "@/assets/Icons/essential/codeblack.svg";
 import Image from "next/image";
 import React, { useState } from 'react';

@@ -1,7 +1,5 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Image from "next/image";
-import Container from "@/components/Container";
 import Badge from "@/components/Badge";
 import Cards from "@/components/Cards";
 import Rodape from "@/components/Rodape";

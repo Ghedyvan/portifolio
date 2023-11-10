@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import email from "@/assets/icons/mylinks/email.svg";
-import whatsapp from "@/assets/icons/mylinks/whatsapp.svg";
-import github from "@/assets/icons/mylinks/github.svg";
-import portifolio from "@/assets/icons/mylinks/code.svg";
+import email from "../../assets/icons/mylinks/email.svg";
+import whatsapp from "../../assets/icons/mylinks/whatsapp.svg";
+import github from "../../assets/icons/mylinks/github.svg";
+import portifolio from "../../assets/icons/mylinks/code.svg";
 import instagram from "@/assets/icons/mylinks/instagram.svg";
 import Linkedin from "@/assets/icons/mylinks/linkedin.svg";
 import cowboy from "@/assets/icons/mylinks/cowboy.png";
