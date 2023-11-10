@@ -1,13 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import email from "../../assets/icons/mylinks/email.svg";
-import whatsapp from "../../assets/icons/mylinks/whatsapp.svg";
-import github from "../../assets/icons/mylinks/github.svg";
-import portifolio from "../../assets/icons/mylinks/code.svg";
-import instagram from "@/assets/icons/mylinks/instagram.svg";
-import Linkedin from "@/assets/icons/mylinks/linkedin.svg";
-import cowboy from "@/assets/icons/mylinks/cowboy.png";
+import email from "../../assets/Icons/mylinks/email.svg";
+import whatsapp from "../../assets/Icons/mylinks/whatsapp.svg";
+import github from "../../assets/Icons/mylinks/github.svg";
+import portifolio from "../../assets/Icons/mylinks/code.svg";
+import instagram from "@/assets/Icons/mylinks/instagram.svg";
+import Linkedin from "@/assets/Icons/mylinks/linkedin.svg";
+import cowboy from "@/assets/Icons/mylinks/cowboy.png";
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
 

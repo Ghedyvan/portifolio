@@ -6,7 +6,7 @@ import StudentCap from "@/assets/student.svg";
 import Notion from "@/assets/notion.svg";
 import Rocket from "@/assets/rocket.svg";
 import CSS from "@/assets/css.svg";
-import Warning from "../assets/warningapple.png";
+import Warning from "../assets/warningApple.png";
 import Icon4 from "@/assets/Icons/essential/codeblack.svg";
 import Image from "next/image";
 import React, { useState } from 'react';
@@ -84,7 +84,7 @@ export default function Cards() {
           </div>
           <div className={classe}>
             <div className="text-red-800 text-center items-center justify-center flex flex-col">
-              <Image src={Warning} alt="Alerta" className="max-w-[50px] mb-4" /> Ops,
+              <Image src={ Warning } alt="Alerta" className="max-w-[50px] mb-4" /> Ops,
               encontramos um problema, me ajude a consertar
             </div>
             <button onClick={adicionarClasse} className="bg-red-600 p-2 rounded-md mt-2">
