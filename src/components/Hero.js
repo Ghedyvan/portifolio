@@ -6,6 +6,7 @@ import Image from "next/image";
 import WillFoto from "@/assets/willFoto.png";
 import WillFoto2 from "@/assets/willFoto2.png";
 import WillFoto3 from "@/assets/willFoto3.png";
+import Ghedyvan from "@/assets/ghedyvan.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -61,9 +62,10 @@ export default function Home() {
             className="mySwiper max-w-[520px]"
           >
             <SwiperSlide className="mySwiper max-w-[520px]">
-              <Image src={WillFoto} className="cover" alt="Foto Will Moreira" />
+              {/* <Image src={WillFoto} className="cover" alt="Foto Will Moreira" /> */}
+              <Image src={ Ghedyvan } className="cover" alt="Foto Will Moreira" />
             </SwiperSlide>
-            <SwiperSlide className="mySwiper max-w-[520px]">
+            {/* <SwiperSlide className="mySwiper max-w-[520px]">
               <Image
                 src={WillFoto2}
                 className="cover"
@@ -76,7 +78,7 @@ export default function Home() {
                 className="cover"
                 alt="Foto Will Moreira"
               />
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
       </div>

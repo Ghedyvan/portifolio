@@ -1,9 +1,11 @@
-"use client";
+'use client'
 
 import Image from "next/image";
 import LogoBranca from "@/assets/mylinks/GVlogo.svg";
 import { motion } from "framer-motion";
 import Signature from "@/assets/signarute.svg";
+import gsap from "gsap";
+import { useEffect } from "react";
 
 const pathVariants = {
   hidden: {
@@ -16,15 +18,24 @@ const pathVariants = {
     pathLenght: 1,
     fill: "white",
     transition: {
-      duration: 3,
+      duration: 2,
       ease: "easeInOut",
     },
   },
 };
 
 export default function Background() {
+
+  useEffect(() => {
+    gsap.fromTo(
+      ".salve",
+      { opacity: 1 },
+      { opacity: 0, duration: 1.5, delay: 3.5 }
+    );
+  }, []);
+
   return (
-    <div className="w-full flex-col h-screen absolute top-0 left-0 z-[999] flex items-center justify-center bg-loading-back overflow-hidden">
+    <div className="w-full divback flex-col h-screen absolute top-0 left-0 flex items-center justify-center salve overflow-hidden">
       <motion.svg
         viewBox="0 0 426 357"
         xmlns="http://www.w3.org/2000/svg"
