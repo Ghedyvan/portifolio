@@ -21,7 +21,7 @@ import "swiper/css/navigation";
 
 export default function Home() {
   return (
-    <div className="bg-gradiente-hero h-[897px] w-full">
+    <div className="bg-gradiente-hero h-[897px] w-full s">
       <div className="w-full max-w-[1246px] px-[15px] mx-auto flex justify-between">
         <div className="w-full max-w-[645px] mt-[204px] bg-red">
           <p className="text-[14px] text-neutral-400 font-normal leading-tight mb-6">
