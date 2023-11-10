@@ -74,17 +74,17 @@ export default function Cards() {
               className="mb-4"
             />
             <h2 className="mb-4 text-gray-950 text-xl font-semibold">
-              "Layouts bem construídos"
+              Layouts bem construídos
             </h2>
             <p className="text-neutral-500 text-base">
               Assim evitando que os textos e itens fiquem{" "}
-              <span className="font-bold">'bugados'</span> no seu layout e
-              causando problemas"
+              <span className="font-bold">bugados</span> no seu layout e
+              causando problemas
             </p>
           </div>
           <div className={classe}>
             <div className="text-red-800 text-center items-center justify-center flex flex-col">
-              <Image src={Warning} className="max-w-[50px] mb-4" /> Ops,
+              <Image src={Warning} alt="Alerta" className="max-w-[50px] mb-4" /> Ops,
               encontramos um problema, me ajude a consertar
             </div>
             <button onClick={adicionarClasse} className="bg-red-600 p-2 rounded-md mt-2">

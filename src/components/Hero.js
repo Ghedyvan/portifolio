@@ -25,7 +25,7 @@ export default function Home() {
       <div className="w-full max-w-[1246px] px-[15px] mx-auto flex justify-between">
         <div className="w-full max-w-[645px] mt-[204px] bg-red">
           <p className="text-[14px] text-neutral-400 font-normal leading-tight mb-6">
-            Hi, I'm{" "}
+            Hi, I am{" "}
             <span className="text-base font-semibold text-white">
               Ghedyvan Vinícius 👋🏻
             </span>
