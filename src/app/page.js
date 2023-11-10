@@ -9,6 +9,7 @@ import ScreenLoading from "@/components/ScreenLoading";
 import { useEffect } from "react";
 import gsap from "gsap";
 
+
 export default function Home() {
   useEffect(() => {
     gsap.fromTo(
