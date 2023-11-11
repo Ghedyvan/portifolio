@@ -22,9 +22,9 @@ export default function Cards() {
   };
 
   return (
-    <div className="pt-[112px] w-full pb-[112px] border-b-2 border-solid border-[#EAEAEA]">
-      <div className="flex justify-between w-full">
-        <h2 className="text-[32px] font-semibold text-gray-950 leading-[38.40px]">
+    <div className="pt-[80px] w-full pb-[112px] border-b-2 border-solid border-[#EAEAEA]">
+      <div className="flex flex-col text-center lg:flex-row justify-between w-full">
+        <h2 className="text-[32px] mb-4 font-semibold text-gray-950 leading-[38.40px]">
           Meus diferenciais
         </h2>
         <p className="text-neutral-500 text-base font-normal max-w-[384px] pb-[69px]">
@@ -37,7 +37,7 @@ export default function Cards() {
           </strong>
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-y-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-5">
         <CardDiff
           image={NextJs}
           word="Tecnologias"

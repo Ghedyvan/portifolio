@@ -11,7 +11,7 @@ import CardMarquee from "./CardMarquee";
 
 export default function Badge() {
     return (
-        <div className="h-[112px] w-full bg-badge-blue">
+        <div className="h-[90px] lg:h-[112px] w-full bg-badge-blue">
             <div className="marquee max-w-[1246px] h-full mx-auto flex items-center overflow-hidden">
                 <Marquee gradient gradientColor="rgba(101, 61, 245, 1)" >
                     <CardMarquee image={ ReactIcon } word="ReactJs" />

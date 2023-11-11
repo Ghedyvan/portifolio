@@ -31,7 +31,7 @@ export default function Home() {
         <div className="mainContent opacity-0">
           <Hero />
           <Badge />
-        </div>
+        </div> 
       </div>
       <div className="bg-white">
         <div className="w-full mainContent max-w-[1246px] px-[15px] mx-auto flex items-center opacity-0">

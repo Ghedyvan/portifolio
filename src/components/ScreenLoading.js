@@ -35,7 +35,7 @@ export default function Background() {
   }, []);
 
   return (
-    <div className="w-full divback flex-col h-screen absolute top-0 left-0 flex items-center justify-center salve overflow-hidden">
+    <div className="w-full divback bg-black flex-col h-full absolute top-0 left-0 flex items-center justify-center salve overflow-hidden">
       <motion.svg
         viewBox="0 0 426 357"
         xmlns="http://www.w3.org/2000/svg"
