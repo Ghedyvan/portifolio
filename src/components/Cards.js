@@ -17,7 +17,7 @@ export default function Cards() {
   const [quadrado, setQuadrado] = useState('py-8 px-8 flex justify-start flex-col rounded-[8px] h-[230px] w-[200px] bg-neutral-100 duration-[1500ms] ease-in-out');
   const adicionarClasse = () => {
     setClasse('hidden');
-    setQuadrado(quadrado.replace(' w-[200px]', ' w-[384px]'))
+    setQuadrado(quadrado.replace(' w-[200px]', ' w-full'))
     transition: 'all 2s'
   };
 
