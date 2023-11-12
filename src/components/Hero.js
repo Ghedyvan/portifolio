@@ -33,9 +33,10 @@ export default function Home() {
     );
   }, []);
 
+
   return (
     <div className="bg-gradiente-hero  md:h-[620px] lg:h-[897px] w-full">
-      <div className="w-full max-w-[1246px] px-[15px] mx-auto flex justify-between">
+      <div className="w-full max-w-[1246px] mx-auto flex justify-between">
         <div ref={leftRef} className="w-full text-center lg:max-w-[645px] mt-[80px] lg:mt-[204px] bg-red">
           <p className="text-[14px] text-neutral-400 font-normal leading-tight mb-6">
             Hi, I am{" "}
@@ -43,10 +44,10 @@ export default function Home() {
               Ghedyvan Vinícius 👋🏻
             </span>
           </p>
-          <h1 className="text-neutral-100 text-[42px] md:text-[64px] font-semibold leading-[50.80px] md:leading-[70.80px] mb-4">
+          <h1 className="text-neutral-100 text-[36px] sm:px-4 overflow-hidden md:text-[64px] font-semibold leading-[50.80px] md:leading-[70.80px] mb-4">
             Entusiasta de Desenvolvimento Front-end
           </h1>
-          <p className="w-full lg:max-w-[520px] sm:text-[12px] text-neutral-400 md:text-[16px] lg:text-lg mb-[72px]">
+          <p className="w-full lg:max-w-[520px] sm:text-[12px] px-2 text-neutral-400 md:text-[16px] lg:text-lg mb-[72px]">
             Venho estudando e construindo diversos projetos front-end, desde
             sistemas completos com HTML, CSS e JS puros a páginas com React e
             Next.js. Essa experiência prática vem me permitindo desenvolver

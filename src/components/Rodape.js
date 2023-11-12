@@ -7,7 +7,7 @@ export default function Rodape(){
             <div>
                 <Image src={ Logo } alt='Logo gv' className="max-w-[70px] mt-8"/>
             </div>
-            <p className='text-neutral-100 text-sm leading-[16.80px] pb-6'>Copyright 2023 - Todos os direitos reservados</p>
+            <p className='text-neutral-100 text-center text-sm leading-[16.80px] pb-6'>Copyright 2023 - Todos os direitos reservados</p>
         </div>
     )
 }

@@ -6,11 +6,14 @@ import Badge from "@/components/Badge";
 import Cards from "@/components/Cards";
 import Rodape from "@/components/Rodape";
 import ScreenLoading from "@/components/ScreenLoading";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
+import ScrollTrigger from "gsap/src/ScrollTrigger";
+
 
 
 export default function Home() {
+  gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     gsap.fromTo(
       ".mainContent",
@@ -19,13 +22,14 @@ export default function Home() {
     );
   }, []);
 
+
   return (
     <div>
       <div className="salve z-[999]">
         <ScreenLoading />
       </div>
       <div className="bg-gradiente-header">
-        <div className="w-full mainContent max-w-[1246px] px-[15px] mx-auto flex items-center opacity-0">
+        <div className="w-full mainContent max-w-[1246px] mx-auto flex items-center opacity-0">
           <Header />
         </div>
         <div className="mainContent opacity-0">

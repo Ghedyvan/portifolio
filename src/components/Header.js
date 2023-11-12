@@ -1,5 +1,3 @@
-import Container from "./Container";
-import Logo from "@/assets/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import Brazil from "@/assets/brazil.svg";
@@ -8,6 +6,7 @@ import LogoGhedyvan from "@/assets/GVlogo.svg";
 import "./hamburger.css";
 import React, { useState, useRef } from "react";
 import gsap from "gsap";
+import Navbar from "./Navbar";
 
 export default function Header() {
   const mobileBar = useRef();
@@ -25,26 +24,24 @@ export default function Header() {
       gsap.fromTo(
         ".navbar",
         { direction: "up", opacity: 0 },
-        { y: 0, duration: 1, opacity: 1 }
+        { y: 0, duration: .3, opacity: 1 }
       );
     } else {
       setClass(hamburger.replace("is-active", "a"));
       gsap.fromTo(
         ".navbar",
         { y: 0 },
-        { direction: "down", y: 500, duration: 1, opacity: 0 }
+        { direction: "down", y: 500, duration: .7, opacity: 0 }
       );
       setTimeout(() => {
         setClasse(navbar.replace("flex", " hidden"));
       }, 1000);
-      
-      
     }
   };
 
   return (
-    <div className="h-full mx-h-[100px] flex justify-between w-full py-6">
-      <Image src={LogoGhedyvan} alt="Logo" className="max-w-[70px]" />
+    <div className="h-full relative mx-h-[100px] flex justify-between w-full py-6">
+      <Image src={LogoGhedyvan} alt="Logo" className="max-w-[70px] ml-[15px]" />
       <div className="hidden md:flex">
         <ul className="flex gap-12 items-center mr-24 text-white">
           <li>
@@ -68,12 +65,13 @@ export default function Header() {
           </Link>
         </div>
       </div>
-      <button onClick={adicionarClasse} className={hamburger} type="button">
+      <Navbar />
+      {/* <button onClick={adicionarClasse} className={hamburger} type="button">
         <span className="hamburger-box">
           <span className="hamburger-inner"></span>
         </span>
-      </button>
-      <div className={navbar} ref={mobileBar}>
+      </button> */}
+      {/* <div className={navbar} ref={mobileBar}>
         <ul className="flex gap-12 items-center text-white flex-col w-full">
           <li>
             <Link href={"./"} className="text-[24px] w-full">
@@ -91,7 +89,8 @@ export default function Header() {
             </Link>
           </li>
         </ul>
-      </div>
+        
+      </div> */}
     </div>
   );
 }

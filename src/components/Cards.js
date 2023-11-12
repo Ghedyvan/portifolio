@@ -9,17 +9,36 @@ import CSS from "@/assets/css.svg";
 import Warning from "../assets/warningApple.png";
 import Icon4 from "@/assets/Icons/essential/codeblack.svg";
 import Image from "next/image";
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import gsap from "gsap";
+import ScrollTrigger from "gsap/src/ScrollTrigger";
+
 
 export default function Cards() {
 
   const [classe, setClasse] = useState('flex flex-col items-center justify-center duration-[1000ms] ease-in-out');
-  const [quadrado, setQuadrado] = useState('py-8 px-8 flex justify-start flex-col rounded-[8px] h-[230px] w-[200px] bg-neutral-100 duration-[1500ms] ease-in-out');
+  const [quadrado, setQuadrado] = useState('py-8 px-8 flex justify-start lg:w-[384px] flex-col rounded-[8px] altura h-[230px] w-[200px] bg-neutral-100 duration-[1500ms] ease-in-out');
   const adicionarClasse = () => {
     setClasse('hidden');
-    setQuadrado(quadrado.replace(' w-[200px]', ' w-full'))
+    setQuadrado(quadrado.replace(' w-[200px]', ' w-full h-auto'))
     transition: 'all 2s'
   };
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    gsap.utils.toArray(".trigger").forEach((card) => {
+      gsap.fromTo(
+        card,
+        { x: -200 },
+        {
+          x: 0,
+          duration: 1.5,
+          scrollTrigger: card,
+        }
+      );
+    });
+  }, []);
 
   return (
     <div className="pt-[80px] w-full pb-[112px] border-b-2 border-solid border-[#EAEAEA]">
@@ -87,7 +106,7 @@ export default function Cards() {
               <Image src={ Warning } alt="Alerta" className="max-w-[50px] mb-4" /> Ops,
               encontramos um problema, me ajude a consertar
             </div>
-            <button onClick={adicionarClasse} className="bg-red-600 p-2 rounded-md mt-2">
+            <button onClick={ adicionarClasse } className="bg-red-600 p-2 rounded-md mt-2">
               CONSERTAR
             </button>
           </div>
