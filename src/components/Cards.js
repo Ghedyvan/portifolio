@@ -17,7 +17,7 @@ import ScrollTrigger from "gsap/src/ScrollTrigger";
 export default function Cards() {
 
   const [classe, setClasse] = useState('flex flex-col items-center justify-center duration-[1000ms] ease-in-out');
-  const [quadrado, setQuadrado] = useState('py-8 px-8 flex justify-start lg:w-[384px] flex-col rounded-[8px] altura h-[230px] w-[200px] bg-neutral-100 duration-[1500ms] ease-in-out');
+  const [quadrado, setQuadrado] = useState('py-8 px-8 flex justify-start flex-col rounded-[8px] altura h-[230px] w-[200px] bg-neutral-100 duration-[1500ms] ease-in-out');
   const adicionarClasse = () => {
     setClasse('hidden');
     setQuadrado(quadrado.replace(' w-[200px]', ' w-full h-auto'))
@@ -42,12 +42,12 @@ export default function Cards() {
 
   return (
     <div className="pt-[80px] w-full pb-[112px] border-b-2 border-solid border-[#EAEAEA]">
-      <div className="flex flex-col text-center lg:flex-row justify-between w-full">
-        <h2 className="text-[32px] mb-4 font-semibold text-gray-950 leading-[38.40px]">
+      <div className="flex flex-col lg:mb-10 text-center items-center lg:flex-row justify-between w-full">
+        <h2 className="text-[32px] mb-4 font-semibold lg:mb-0 text-gray-950 leading-[38.40px]">
           Meus diferenciais
         </h2>
-        <p className="text-neutral-500 text-base font-normal max-w-[384px] pb-[69px]">
-          <strong className="text-gray-950 text-base font-semibold">
+        <p className="text-neutral-500 w-full  text-base font-normal lg:pb-0 max-w-[384px] pb-[69px] lg:text-right">
+            <strong className="text-gray-950 text-base font-semibold text-left ">
             Transformo design{" "}
           </strong>
           em páginas para a web com agilidade, qualidade e{" "}
@@ -56,7 +56,7 @@ export default function Cards() {
           </strong>
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-5">
+      <div className="grid lg:gap-x-5 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-5">
         <CardDiff
           image={NextJs}
           word="Tecnologias"

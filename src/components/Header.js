@@ -43,7 +43,7 @@ export default function Header() {
     <div className="h-full relative mx-h-[100px] flex justify-between w-full py-6">
       <Image src={LogoGhedyvan} alt="Logo" className="max-w-[70px] ml-[15px]" />
       <div className="hidden md:flex">
-        <ul className="flex gap-12 items-center mr-24 text-white">
+        <ul className="flex gap-12 items-center mr-24 lg:text-lg text-white">
           <li>
             <Link href={"./"}>Quem sou</Link>
           </li>

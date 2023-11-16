@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 export default function CardDiff(props) {
 
   return (
-    <div className=" trigger py-8 px-8 flex justify-start flex-col rounded-[8px] h-auto w-full lg:w-[384px] bg-neutral-100">
+    <div className=" trigger py-8 px-8 flex justify-start flex-col rounded-[8px] h-auto w-full lg:w-auto bg-neutral-100">
       <Image
         src={props.image}
         alt="Imagem do card"

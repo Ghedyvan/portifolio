@@ -41,7 +41,7 @@ export default function Navbar() {
               Quem sou
             </Link>
           </li>
-          <li className="text-white text-2xl px-8 text-center">
+          <li className="text-white text-2xl px-8  text-center">
             <Link href={"./"} className="py-8">
               Cases
             </Link>
