@@ -33,7 +33,7 @@ export default function MyLinksBody() {
 
     tl.delay(4);
 
-    tl.fromTo(buttona, { opacity: 0, y: 100 }, { opacity: .6, y: 0 })
+    tl.fromTo(buttona, { opacity: 0, y: 100 }, { opacity: 1, y: 0 })
       .fromTo(buttonb, { opacity: 0, y: 100 }, { opacity: 1, y: 0 })
       .fromTo(buttonc, { opacity: 0, y: 100 }, { opacity: 1, y: 0 })
       .fromTo(buttond, { opacity: 0, y: 100 }, { opacity: 1, y: 0 })
@@ -44,8 +44,10 @@ export default function MyLinksBody() {
 
   return (
     <div className="flex flex-col justify-center items-center mx-4">
-      <div
+      <a
         ref={buttonaRef}
+        href="https://gvinicius.com.br"
+        target="_blank"
         className="relative mb-4 flex w-full bg-slate-900 max-w-[680px] h-[60px] rounded-lg shadow border-2 border-slate-900  justify-center align-middle"
       >
         <Image
@@ -56,7 +58,7 @@ export default function MyLinksBody() {
         <p className="text-white absolute top-[30%]">
           Meu site (em construção)
         </p>
-      </div>
+      </a>
       <a
         ref={buttonbRef}
         href="https://github.com/Ghedyvan"

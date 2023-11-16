@@ -9,7 +9,7 @@ const ibmPlexSans = IBM_Plex_Sans({
 
 export const metadata = {
   title: "G Vinícius",
-  description: "Minha página pessoal",
+  description: "Meus links",
   icons: {
     icon: "/favicon.ico",
   },

@@ -66,31 +66,6 @@ export default function Header() {
         </div>
       </div>
       <Navbar />
-      {/* <button onClick={adicionarClasse} className={hamburger} type="button">
-        <span className="hamburger-box">
-          <span className="hamburger-inner"></span>
-        </span>
-      </button> */}
-      {/* <div className={navbar} ref={mobileBar}>
-        <ul className="flex gap-12 items-center text-white flex-col w-full">
-          <li>
-            <Link href={"./"} className="text-[24px] w-full">
-              Quem sou
-            </Link>
-          </li>
-          <li>
-            <Link href={"./"} className="text-[24px] w-full">
-              Cases
-            </Link>
-          </li>
-          <li>
-            <Link href={"./"} className="text-[24px] w-full">
-              Contato
-            </Link>
-          </li>
-        </ul>
-        
-      </div> */}
     </div>
   );
 }

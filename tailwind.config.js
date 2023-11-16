@@ -20,6 +20,7 @@ module.exports = {
         "badge-blue": "rgba(101, 61, 245, 1)",
         "badge-item": "rgba(255, 255, 255, 0.06)",
         "loading-back": "#030917",
+        "pink-gradient": "rgba(228,140,136, 1)",
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',

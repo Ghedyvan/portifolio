@@ -1,6 +1,5 @@
 'use client'
 
-import profileVideo from "../../assets/mylinks/profile.mp4";
 import profileVideo2 from "../../assets/mylinks/profile2.mp4";
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
