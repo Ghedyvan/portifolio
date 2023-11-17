@@ -40,7 +40,7 @@ export default function Header() {
   };
 
   return (
-    <div className="h-full relative mx-h-[100px] flex justify-between w-full py-6">
+    <div className="h-full relative mx-h-[100px] flex justify-between w-full py-6 pr-4">
       <Image src={LogoGhedyvan} alt="Logo" className="max-w-[70px] ml-[15px]" />
       <div className="hidden md:flex">
         <ul className="flex gap-12 items-center mr-24 lg:text-lg text-white">

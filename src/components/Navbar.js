@@ -33,7 +33,7 @@ export default function Navbar() {
 
 
   return (
-    <motion.div className="sidebar flex flex-col items-center bg-red-600" animate={open ? "open" : "closed"}>
+    <motion.div className="sidebar flex flex-col items-center bg-red-600 md:hidden" animate={open ? "open" : "closed"}>
       <motion.div className="absolute h-screen z-[999] bg-gradiente-hero mt-[108px] left-0 w-screen align-left sm:justify-start md:justify-center navbar" variants={ variants }>
         <ul className="flex flex-col gap-12">
           <li className="text-white text-2xl px-8 text-center">
