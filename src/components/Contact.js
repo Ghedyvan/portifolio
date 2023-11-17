@@ -9,7 +9,7 @@ const oxanium = Oxanium({ subsets: ["latin"] });
 
 export default function Contact() {
   return (
-    <div>
+    <section id="contato">
       <div className="flex flex-col justify-center items-center text-black">
         <video
           playsinline
@@ -51,6 +51,6 @@ export default function Contact() {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

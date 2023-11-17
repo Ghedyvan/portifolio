@@ -5,16 +5,16 @@ import AMRectangle from "./AMRectangles";
 
 export default function AboutMe() {
   return (
-    <section className="about-me flex flex-col w-full items-center h-[600px]">
-      <div className="h-[285px] w-full max-w-[90%] flex justify-center absolute">
+    <section id="aboutMe" className="about-me px-4 flex flex-col w-full items-center h-[600px] sm:h-[500px] md:flex-row max-w-[1246px]">
+      <div className="h-[285px] md:h-[350px] w-full px-4 flex justify-center absolute md:static">
         <Image
           src={FotoExemplo}
           alt="foto de exemplo"
-          className="w-full h-full object-cover rounded-md relative top-[-80px]"
+          className="w-full h-full object-cover rounded-md relative md:static top-[-80px] lg:object-right"
         />
       </div>
       <div>
-        <div className="text-white text-left relative top-[220px] px-4 w-full">
+        <div className="text-white text-left relative top-[220px] md:top-0 w-full">
           <h2
             className="text-lgfont-semibold"
           >

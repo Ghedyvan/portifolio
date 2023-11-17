@@ -42,7 +42,7 @@ export default function Home() {
           <Cards />
         </div>
       </div>
-      <div className="bg-badge-blue h-auto">
+      <div className="bg-badge-blue h-auto justify-center w-full flex">
         <AboutMe />
       </div>
       <div className="bg-black h-auto">

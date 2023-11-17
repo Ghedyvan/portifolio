@@ -39,19 +39,35 @@ export default function Header() {
     }
   };
 
+  const scrollToCases = () => {
+    const casesSection = document.getElementById("cases");
+    casesSection.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToAboutMe = () => {
+    const casesSection = document.getElementById("aboutMe");
+    casesSection.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToContato = () => {
+    const casesSection = document.getElementById("contato");
+    casesSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="h-full relative mx-h-[100px] flex justify-between w-full py-6 pr-4">
       <Image src={LogoGhedyvan} alt="Logo" className="max-w-[70px] ml-[15px]" />
       <div className="hidden md:flex">
         <ul className="flex gap-12 items-center mr-24 lg:text-lg text-white">
           <li>
-            <Link href={"./"}>Quem sou</Link>
+            <button onClick={ scrollToAboutMe }>Quem sou</button>
+      
           </li>
           <li>
-            <Link href={"./"}>Cases</Link>
+            <button onClick={ scrollToCases }>Cases</button>
           </li>
           <li>
-            <Link href={"./"}>Contato</Link>
+          <button onClick={ scrollToContato }>Contato</button>
           </li>
         </ul>
         <div className="flex items-center">
