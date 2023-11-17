@@ -4,17 +4,33 @@ import case2 from "@/assets/cases/case2.png";
 import case4 from "@/assets/cases/case4.png";
 import case5 from "@/assets/cases/case5.png";
 import icon from "@/assets/Programing, Data/monitor-code.svg";
-import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./Cases.css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Mousewheel, Navigation, Pagination } from "swiper/modules";
-import { color } from "framer-motion";
+import React, { useState, useRef, useEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/src/ScrollTrigger";
 
 export default function Cases() {
+
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    gsap.fromTo(
+      ".triggerCases",
+      { y: 200 },
+      {
+        y: 0,
+        duration: 1.5,
+        scrollTrigger: ".triggerCases",
+      }
+    );
+  }, []);
+
   return (
     <section id="cases">
       <div className="pt-8">
@@ -118,7 +134,7 @@ export default function Cases() {
         loop={true}
         navigation={true}
         modules={[Mousewheel, Pagination, Navigation]}
-        className="mySwiper !hidden lg:!block max-w-[1245px]"
+        className="mySwiper triggerCases !hidden lg:!block max-w-[1245px]"
       >
         <SwiperSlide className="hidden lg:block">
           <div className="mt-8 bg-black sticky flex-1 pb-10 top-5 pt-1 ">
