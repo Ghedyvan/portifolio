@@ -3,20 +3,22 @@
 import Image from "next/image";
 import LogoBranca from "@/assets/mylinks/GVlogo.svg";
 import { motion } from "framer-motion";
-import Signature from "@/assets/signarute.svg";
+import Signature from "@/assets/signature.svg";
 import gsap from "gsap";
 import { useEffect } from "react";
 
 const pathVariants = {
   hidden: {
-    pathLenght: 0,
+    pathLength: 0,
     opacity: 0,
     fill: "none",
+    strokeDasharray: "0 1", // Initially hide the stroke
   },
   visible: {
     opacity: 1,
-    pathLenght: 1,
+    pathLength: 1,
     fill: "white",
+    strokeDasharray: "1 0", // Draw the stroke
     transition: {
       duration: 2,
       ease: "easeInOut",
@@ -55,6 +57,7 @@ export default function Background() {
         />
       </motion.svg>
       <motion.svg
+      id={"text"}
         initial="hidden"
         animate="visible"
         viewBox="0 0 182 51"

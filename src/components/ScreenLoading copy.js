@@ -18,7 +18,7 @@ const pathVariants = {
     pathLenght: 1,
     fill: "white",
     transition: {
-      duration: 2,
+      duration: 1.5,
       ease: "easeInOut",
     },
   },

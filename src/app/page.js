@@ -6,7 +6,7 @@ import Badge from "@/components/Badge";
 import Cards from "@/components/Cards";
 import Rodape from "@/components/Rodape";
 import ScreenLoading from "@/components/ScreenLoading";
-import { useEffect, useLayoutEffect, useRef } from "react";
+import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/src/ScrollTrigger";
 import AboutMe from "@/components/AboutMe";
