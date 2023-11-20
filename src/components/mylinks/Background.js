@@ -16,7 +16,7 @@ export default function Background() {
 
     </div> */}
     <div className="w-full h-full z-[-1] video top-0 left-0 fixed">
-      <video playsinline autoplay loop muted className="object-cover w-full h-full">
+      <video playsInline autoplay loop muted className="object-cover w-full h-full">
         <source src={ backgroundVideo } alt="Video background" type="video/mp4" />
       </video>
     </div>

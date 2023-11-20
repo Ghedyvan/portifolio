@@ -27,7 +27,7 @@ export default function Contact() {
     <section id="contato" className="triggerContact">
       <div className="flex flex-col justify-center items-center text-black">
         <video
-          playsinline
+          playsInline
           autoplay
           loop
           muted
