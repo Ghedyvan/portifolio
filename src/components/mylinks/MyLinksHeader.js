@@ -26,8 +26,8 @@ export default function MyLinksHeader() {
     <div className="flex w-full h-full items-center justify-center">
       <div className="flex flex-col justify-center items-center">
         <video
+          autoPlay
           playsInline
-          autoplay
           loop
           muted
           ref={imageRef}
