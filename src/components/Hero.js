@@ -45,7 +45,7 @@ export default function Home() {
             </span>
           </p>
           <h1 className="text-neutral-100 text-[36px] sm:px-4 lg:px-0 sm:text-[42px] overflow-hidden md:text-[64px] font-semibold leading-[50.80px] md:leading-[70.80px] mb-4">
-            Entusiasta de Desenvolvimento Front-end
+            Desenvolvedor<br/>Front-end
           </h1>
           <p className="w-full lg:max-w-[520px] sm:text-sm px-2 text-neutral-400 md:text-[16px] lg:text-lg mb-[72px]">
             Venho estudando e construindo diversos projetos front-end, desde
