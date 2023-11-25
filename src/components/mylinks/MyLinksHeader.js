@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import profileVideo2 from "../../assets/mylinks/profile2.mp4";
 import { gsap } from "gsap";
@@ -10,7 +10,7 @@ export default function MyLinksHeader() {
   const descriptionRef = useRef(null);
 
   useEffect(() => {
-    const tl = gsap.timeline({ defaults: { duration: .7 } });
+    const tl = gsap.timeline({ defaults: { duration: 0.7 } });
     const image = imageRef.current;
     const name = nameRef.current;
     const description = descriptionRef.current;
@@ -26,11 +26,11 @@ export default function MyLinksHeader() {
     <div className="flex w-full h-full items-center justify-center">
       <div className="flex flex-col justify-center items-center">
         <video
-          playsinline
-          ref={imageRef}
           autoPlay
+          playsInline
           loop
           muted
+          ref={imageRef}
           className="object-cover w-28 h-28 rounded-full mt-16"
         >
           <source src={profileVideo2} alt="Video perfil" type="video/mp4" />

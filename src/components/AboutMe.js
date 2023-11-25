@@ -42,7 +42,7 @@ export default function AboutMe() {
           </h3>
           <p className=" text-base font-normal mt-5 mb-3 ">
             Sou graduando em Ciência da Computação e trabalho como desenvolvedor
-            front-end. Como consequência do amor pelo pela programação,
+            front-end. Como consequência do amor pela programação,
             desenvolver se tornou meu hobby favorito.
           </p>
           <h2>@vg_garcia</h2>
