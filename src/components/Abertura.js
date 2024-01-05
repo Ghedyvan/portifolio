@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 export default function Abertura() {
-    const [opacity, setOpacity] = useState(0);
+    const [opacity, setOpacity] = useState(.4);
     const [opacity2, setOpacity2] = useState(1);
 
     useEffect(() => {
