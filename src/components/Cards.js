@@ -30,10 +30,10 @@ export default function Cards() {
     gsap.utils.toArray(".trigger").forEach((card) => {
       gsap.fromTo(
         card,
-        { x: -200 },
+        { x: -130 },
         {
           x: 0,
-          duration: 1.5,
+          duration: 1,
           scrollTrigger: card,
         }
       );
@@ -46,7 +46,7 @@ export default function Cards() {
         <h2 className="text-[32px] mb-4 font-semibold lg:mb-0 text-gray-950 leading-[38.40px]">
           Meus diferenciais
         </h2>
-        <p className="text-neutral-500 w-full  text-base font-normal lg:pb-0 max-w-[384px] pb-[69px] lg:text-right">
+        <p className="text-neutral-500 w-full text-base font-normal lg:pb-0 max-w-[384px] pb-[69px] lg:text-right">
             <strong className="text-gray-950 text-base font-semibold text-left ">
             Transformo design{" "}
           </strong>
@@ -97,14 +97,13 @@ export default function Cards() {
             </h2>
             <p className="text-neutral-500 text-base">
               Assim evitando que os textos e itens fiquem{" "}
-              <span className="font-bold">bugados</span> no seu layout e
-              causando problemas
+              <span className="font-bold">bugados</span> no seu layout
+              causando  <span className="font-bold">problemas</span> iguais ao que você acabou de consertar 😏
             </p>
           </div>
           <div className={classe}>
             <div className="text-red-800 text-center items-center justify-center flex flex-col">
-              <Image src={ Warning } alt="Alerta" className="max-w-[50px] mb-4" /> Ops,
-              encontramos um problema, me ajude a consertar
+              <Image src={ Warning } alt="Alerta" className="max-w-[50px] mb-4" /><p> Opa, temos um <span className="font-bold">problema,</span>você 🫵 foi escolhido para consertar isso </p>
             </div>
             <button onClick={ adicionarClasse } className="bg-red-600 p-2 rounded-md mt-2">
               CONSERTAR

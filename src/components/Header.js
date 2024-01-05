@@ -73,12 +73,13 @@ export default function Header() {
         <div className="flex items-center">
           <Link href={"./"} className="flex items-center text-white">
             <Image src={Brazil} alt="Brazil logo" className="mr-2" />
-            <span>PT /</span>
+            <span>BR</span>
+            {/* <span>PT /</span> */}
           </Link>
-          <Link href={"./"} className="flex items-center ml-2 text-white">
+          {/* <Link href={"./"} className="flex items-center ml-2 text-white">
             <Image src={USA} alt="USA logo" className="mr-2" />
             <span>EN</span>
-          </Link>
+          </Link> */}
         </div>
       </div>
       <Navbar />

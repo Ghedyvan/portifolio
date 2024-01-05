@@ -14,9 +14,7 @@ export default function MyLinksHeader() {
     const image = imageRef.current;
     const name = nameRef.current;
     const description = descriptionRef.current;
-    var currentDelay = tl.delay();
-
-    tl.delay(4);
+    var currentDelay = tl.delay(2);
 
     tl.fromTo(image, { opacity: 0, x: -100 }, { opacity: 1, x: 0 })
       .fromTo(name, { opacity: 0, x: -100 }, { opacity: 1, x: 0 })

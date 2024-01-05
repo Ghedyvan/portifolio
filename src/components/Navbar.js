@@ -58,7 +58,7 @@ export default function Navbar() {
       animate={open ? "open" : "closed"}
     >
       <motion.div
-        className="absolute h-screen z-[999] bg-gradiente-hero mt-[108px] left-0 w-screen align-left sm:justify-start md:justify-center navbar"
+        className="absolute h-screen z-[998] bg-gradiente-hero mt-[108px] left-0 w-screen align-left sm:justify-start md:justify-center navbar"
         variants={variants}
       >
         <ul className="flex flex-col gap-12">

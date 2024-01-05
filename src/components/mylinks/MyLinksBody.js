@@ -29,9 +29,9 @@ export default function MyLinksBody() {
     const buttone = buttoneRef.current;
     const buttonf = buttonfRef.current;
     const thanks = thanksRef.current;
-    var currentDelay = tl.delay();
+    var currentDelay = tl.delay(3);
 
-    tl.delay(4);
+    tl.delay(2);
 
     tl.fromTo(buttona, { opacity: 0, y: 100 }, { opacity: 1, y: 0 })
       .fromTo(buttonb, { opacity: 0, y: 100 }, { opacity: 1, y: 0 })
@@ -56,7 +56,7 @@ export default function MyLinksBody() {
           className="w-8 absolute left-4 top-[25%]"
         />
         <p className="text-white absolute top-[30%]">
-          Meu site (em construção)
+          Portifólio - Meu site
         </p>
       </a>
       <a
@@ -110,7 +110,7 @@ export default function MyLinksBody() {
           className="w-8 absolute left-4 top-[25%]"
         />
         <p className="text-white absolute top-[30%]">
-          Fale comigo no WhatsApp!
+          Falar no WhatsApp
         </p>
       </a>
       <a
@@ -124,7 +124,7 @@ export default function MyLinksBody() {
           className="w-8 absolute left-4 top-[25%]"
         />
         <p className="text-white absolute top-[30%]">
-          Entre em contato via Email!
+          Enviar um email
         </p>
       </a>
       <h2
