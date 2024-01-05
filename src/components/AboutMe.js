@@ -13,7 +13,7 @@ export default function AboutMe() {
       { y: 200 },
       {
         y: 0,
-        duration: 1.5,
+        duration: 1,
         scrollTrigger: ".triggerAbout",
       }
     );
@@ -48,13 +48,6 @@ export default function AboutMe() {
           <h2>@vg_garcia</h2>
         </div>
       </div>
-      {/* <div className="flex relative top-[250px]">
-          <AMRectangle image={IconExemplo} text="+1 ano de experiência" />
-          <AMRectangle image={IconExemplo} text="Desenvolvedor web" />
-          <AMRectangle image={IconExemplo} text="Front end na SEDECTI" />
-          <AMRectangle image={IconExemplo} text="Freelancer" />
-          <AMRectangle image={IconExemplo} text="HomeOffice" />
-        </div> */}
     </section>
   );
 }

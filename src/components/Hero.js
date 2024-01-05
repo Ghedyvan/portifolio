@@ -23,10 +23,10 @@ export default function Home() {
   const rightRef = useRef("");
 
   useEffect(() => {
-    const tl = gsap.timeline({ defaults: { duration: 1.5 } });
+    const tl = gsap.timeline({ defaults: { duration: 1.2 } });
     const leftSide = leftRef.current;
     const rightSide = rightRef.current;
-    tl.fromTo(leftSide, { opacity: 0, x: -100 }, { opacity: 1, x: 0,  delay: 3.3 }).fromTo(
+    tl.fromTo(leftSide, { opacity: 0, x: -100 }, { opacity: 1, x: 0,  delay: 2.5 }).fromTo(
       rightSide,
       { opacity: 0, x: 100 },
       { opacity: 1, x: 0 }

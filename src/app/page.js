@@ -5,40 +5,33 @@ import Hero from "@/components/Hero";
 import Badge from "@/components/Badge";
 import Cards from "@/components/Cards";
 import Rodape from "@/components/Rodape";
-import ScreenLoading from "@/components/ScreenLoading";
-import { useEffect } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/src/ScrollTrigger";
 import AboutMe from "@/components/AboutMe";
 import Cases from "@/components/Cases";
 import Contact from "@/components/Contact";
+import Abertura from "@/components/Abertura";
 
 export default function Home() {
-  gsap.registerPlugin(ScrollTrigger);
-  useEffect(() => {
-    gsap.fromTo(
-      ".mainContent",
-      { opacity: 0 },
-      { opacity: 1, duration: 2.5, delay: 4.5 }
-    );
-  }, []);
+  if (typeof document !== 'undefined') {
+    setTimeout(() => {
+      const divElement = document.querySelector('.preto');
+      divElement.classList.remove('overflow-y-hidden');
+    }, 2600);
+  }
 
   return (
-    <div>
-      <div className="salve z-[999]">
-        <ScreenLoading />
-      </div>
+    <div className="preto h-screen overflow-y-hidden">
+      <Abertura />
       <div className="bg-gradiente-header">
-        <div className="w-full mainContent max-w-[1246px] mx-auto flex items-center opacity-0">
+        <div className="w-full mainContent max-w-[1246px] mx-auto flex items-center">
           <Header />
         </div>
-        <div className="mainContent opacity-0">
+        <div className="mainContent">
           <Hero />
           <Badge />
         </div>
       </div>
       <div className="bg-white">
-        <div className="w-full mainContent max-w-[1246px] px-[15px] mx-auto flex items-center opacity-0">
+        <div className="w-full mainContent max-w-[1246px] px-[15px] mx-auto flex items-center">
           <Cards />
         </div>
       </div>
@@ -52,7 +45,7 @@ export default function Home() {
         <Contact />
       </div>
       <div className="w-full bg-black">
-        <div className="w-full mainContent max-w-[1246px]  px-[15px] mx-auto flex items-center opacity-0">
+        <div className="w-full mainContent max-w-[1246px]  px-[15px] mx-auto flex items-center">
           <Rodape />
         </div>
       </div>
