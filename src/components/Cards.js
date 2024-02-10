@@ -82,8 +82,8 @@ export default function Cards() {
           word="Performance"
           text="Sites otimizados para oferecer um carregamento rápido e interações suaves durante a navegação"
         />
-        {/* <CardDiff image={ CSS } word="Layouts bem construídos" text="Assim evitando que os textos e itens fiquem 'bugados' no seu layout e causando problemas" /> */}
-        <div className="flex">
+        <CardDiff image={ CSS } word="Layouts bem construídos" text="Garantindo que seu sistema seja exibido corretamente independente do dispositivo que for usado" />
+        {/* <div className="flex">
           <div className={ quadrado }>
             <Image
               src={CSS}
@@ -109,7 +109,7 @@ export default function Cards() {
               CONSERTAR
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
